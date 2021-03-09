@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form id="reg-form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="accountnumber" placeholder="Account number">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="identitynumber" placeholder="Identity number">
+    </form>
+    <script>
+        const form = document.getElementById('reg-form')
+        form.addEventListener('submit',registerAccount)
+
+        function registerAccount(event){
+            event.preventDefault()
+            const userName = document.getElementById('username')
+            const accountNumber = document.getElementById('accountnumber')
+            const emailAddress = document.getElementById('email')
+            const identityNumber = document.getElementById('identitynumber')
+        }
+    </script>
+</body>
+</html>
