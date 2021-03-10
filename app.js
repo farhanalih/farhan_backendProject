@@ -2,8 +2,8 @@ const express = require ('express')
 const app = express()
 const mongoose = require ('mongoose')
 const bodyParser = require ('body-parser')
-
 require('dotenv/config')
+const swaggerUi = require('swagger-ui-express')
 
 //Middleware
 app.use(bodyParser())
@@ -13,8 +13,8 @@ const loginRoutes = require('./routes/auth')
 
 
 //routes
-app.use('/account',accountRoutes)
-app.use('/login',loginRoutes)
+app.use('/api/account',accountRoutes)
+app.use('/api/login',loginRoutes)
 
 
 //connect to Database
