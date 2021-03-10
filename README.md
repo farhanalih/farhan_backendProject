@@ -13,7 +13,7 @@ login disini untuk mendapatkan token, dimana token tersebut untuk mengakses API 
 API ini digunakan untuk menambahkan data account
 ![Screenshot](https://github.com/farhanalih/farhan_backendProject/blob/main/img/createAccount.PNG)<br/>
 -karna disini menggunakan redis, jadi setiap kali menambahkan data harus menggunakan perintah **"flushall"**
-pada redis-cli
+pada redis-cli<br/>
 ![Screenshot](https://github.com/farhanalih/farhan_backendProject/blob/main/img/flush.PNG)
 
 **3. API get data Account (localhost:3003/api/account/read)**<br/>
